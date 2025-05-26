@@ -1,3 +1,4 @@
 # My Osu Skin repository
-School project<br>
-Will update it into a much more practical state after my exams
+## DISCLAMER
+This is a School project<br>
+Will update it into a much more usable state someday after my exams
