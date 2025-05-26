@@ -25,11 +25,13 @@
                         <div class="space-y-2">
                             <div>
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required class="rounded-md">
+                                <x-text-input id="name" name="name" required/>
+{{--                                <input type="text" id="name" name="name" required class="rounded-md">--}}
                             </div>
                             <div>
                                 <label for="author">Author:</label>
-                                <input type="text" id="author" name="author" required class="rounded-md">
+                                <x-text-input id="author" name="author" required/>
+{{--                                <input type="text" id="author" name="author" required class="rounded-md">--}}
                             </div>
                             <div>
                                 <label for="file">File:</label>
