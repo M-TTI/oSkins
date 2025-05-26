@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id()->unique();
             $table->string('name');
             $table->string('author');
-            $table->string('path_to_folder');
+            $table->string('path_to_file');
             $table->timestamps();
         });
     }

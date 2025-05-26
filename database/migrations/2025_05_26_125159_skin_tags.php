@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('players', function (Blueprint $table) {
-            $table->integer('user_id')->unique();
-            $table->string('username');
-            $table->integer('rank')->default(0);
-            $table->timestamps();
+        Schema::create('skin_tags', function (Blueprint $table) {
+            $table->integer('skin_id')->unsigned();
+            $table->integer('tag_id')->unsigned();
         });
     }
 
@@ -24,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('players');
+        //
     }
 };

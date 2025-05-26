@@ -11,6 +11,11 @@ class Skin extends Model
     protected $fillable = [
         'name',
         'author',
-        'path_to_folder',
+        'path_to_file',
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }
