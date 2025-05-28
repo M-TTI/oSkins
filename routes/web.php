@@ -26,8 +26,6 @@ Route::get('/skins', [SkinController::class, 'index'])->name('skin.index');
 Route::get('/skins/{id}', [SkinController::class, 'show'])->name('skin.show');
 Route::get('/skins/{id}/download', [SkinController::class, 'download'])->name('skin.download');
 
-Route::get('/tags', [TagController::class, 'index'])->name('tags.index');
-
 
 Route::middleware(['auth', 'is_admin'])->group(function () {
     Route::post('/skins', [SkinController::class, 'store'])->name('skin.store');

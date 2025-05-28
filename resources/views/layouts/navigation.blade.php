@@ -15,11 +15,11 @@
                     <x-nav-link :href="route('skin.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Skins') }}
                     </x-nav-link>
-                    @if (auth()->user()->is_admin)
-                        <x-nav-link :href="route('tags.index')" :active="request()->routeIs('dashboard')">
-                            {{ __('Tags') }}
-                        </x-nav-link>
-                    @endif
+{{--                    @if (auth()->user()->is_admin)--}}
+{{--                        <x-nav-link :href="route('tags.index')" :active="request()->routeIs('dashboard')">--}}
+{{--                            {{ __('Tags') }}--}}
+{{--                        </x-nav-link>--}}
+{{--                    @endif--}}
                 </div>
             </div>
 
